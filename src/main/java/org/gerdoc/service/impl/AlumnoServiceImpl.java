@@ -1,0 +1,30 @@
+package org.gerdoc.service.impl;
+
+import org.gerdoc.dao.AlumnoDao;
+import org.gerdoc.dao.impl.AlumnoDaoImpl;
+import org.gerdoc.model.Alumno;
+import org.gerdoc.service.AlumnoService;
+
+import java.util.List;
+
+public class AlumnoServiceImpl implements AlumnoService
+{
+    private AlumnoDao alumnoDao;
+
+    public AlumnoServiceImpl( )
+    {
+        this.alumnoDao = new AlumnoDaoImpl( );
+    }
+
+    @Override
+    public List<Alumno> findAll()
+    {
+        return alumnoDao.findAll( );
+    }
+
+    @Override
+    public Alumno findById(Long id)
+    {
+        return alumnoDao.findById( id );
+    }
+}
