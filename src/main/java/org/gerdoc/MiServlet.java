@@ -24,8 +24,8 @@ public class MiServlet extends HttpServlet
     {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
-        String url = "jdbc:mysql://127.0.0.1/TEST?user=root&password=1234";
-        String sql = "INSERT INTO TBL_ROL(ROL,DESCRIPCION) VALUES(?,?)";
+        String url = "jdbc:mysql://127.0.0.1/TEST?user=root&password=n0m3l0";
+        String sql = "INSERT INTO TBL_ROL1(ROL,DESCRIPCION) VALUES(?,?)";
         int row = 0;
         resp.setContentType("text/html;charset=UTF-8");
 
